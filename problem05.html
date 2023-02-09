@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>problem05</title>
+    </head>
+    <body>
+        <h3><strong>캠핑장 예약하기</strong></h3>
+        <form method="get" action="">
+            <fieldset style="width:350px;">
+            <legend>예약자 정보</legend>
+            예약자: <input type ="text" name="person"/><br>
+            연락처: <input type ="text" name ="tel" placeholder="010-0000-0000" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}"/><br>
+            예약인원: <select name ="number" size="1">
+                <option>2명</option> <option>3명</option> <option>4명</option> <option>5명</option> <option>6명</option>
+            </select><br>
+            캠핑종류: <input type ="radio" name ="type"/>텐트
+            <input type ="radio" name ="type"/>카라반
+            <input type ="radio" name ="type"/>차박
+            <br>
+            추가사항: <input type ="checkbox" name = "add"/>바베큐
+            <input type ="checkbox" name = "add"/>수영장
+            <input type ="checkbox" name = "add"/>전열기구<br>
+        </fieldset>
+        <fieldset style="width: 350px;">
+            <legend>예약일</legend>
+            숙박 시작일: <input type ="datetime" name ="startdate" placeholder="연도-월-일"><br>
+            숙박일: <select name ="date" size ="1">
+                <option>1박2일</option> <option>2박3일</option> <option>3박4일</option>
+            </select><br>
+        </fieldset>
+        <br>
+        <input type = "submit" value = "예약"/>
+        <input type= "reset" value="취소"/>
+        </form>
+    </body>
+</html>
